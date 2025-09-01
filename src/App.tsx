@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component , useState, useEffect} from 'react';
 import './App.css';
 import CardList from './components/card-list/CardList';
 import SearchBox from './components/searcch-box/SearchBox';
@@ -19,7 +19,7 @@ class App extends Component {
       .then(users => this.setState({ monsters: users }));
   }
 
-   onSearchChange = event => {
+   const onSearchChange = event => {
     this.setState({ searchField: event.target.value });
   };
 
