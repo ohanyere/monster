@@ -1,4 +1,4 @@
-import {  useState, useEffect, type ChangeEvent} from 'react';
+import {  useState,  type ChangeEvent} from 'react';
 import CardList from './components/card-list/CardList';
 import SearchBox from './components/search-box/SearchBox';
 import { useQuery } from '@tanstack/react-query';

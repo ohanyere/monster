@@ -1,7 +1,15 @@
-import { Link } from 'react-router-dom';
 import './card.styles.css';
 
- const Card = ({monster}) => {
+type props = {
+email: string,
+id: number,
+name: string,
+}
+
+type monsterProps = {
+  monster : props
+}
+ const Card = ({monster} : monsterProps) => {
     console.log(monster);
     
   return(

@@ -1,19 +1,18 @@
 import  Card  from '../card/Card';
 import './card-list.styles.css';
 
-type props = {
+ type props = {
 email: string,
 id: number,
 name: string,
-phone: string,
-username: string,
-website:string,
-address : object,
-company : object
+}
+
+type monster = {
+  monsters : props[]
 }
 
 
- const CardList = ({monsters})  => {
+ const CardList = ({monsters} : monster)  => {
     console.log(monsters)
     
     return (
