@@ -9,7 +9,7 @@ name: string,
 type monsterProps = {
   monster : props
 }
- const Card = ({monster}) => {
+ const Card = ({monster} : monsterProps) => {
     console.log(monster);
     
   return(
