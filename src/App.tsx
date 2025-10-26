@@ -46,8 +46,8 @@ company : object
 
       return (
       <div className='App'>
-        <h1>Monsters Rolodex</h1>
-        <SearchBox onSearchChange={onsearchChange} />
+        <h1 style={{color:"white", textAlign:"center"}}>Monsters Rolodex</h1>
+        <div style={{display: "flex", justifyContent: "center" }}><SearchBox onSearchChange={onsearchChange} /></div>
         <CardList monsters={filteredMonsters} />
       </div>
     );
